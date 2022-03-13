@@ -1,6 +1,6 @@
 const { expect } = require('@jest/globals');
 const findFib = require('./findfibonacciseries');
 
-test("returns input to test the function", () => {
-    expect(findFib(9)).toBe(9)
+test("function only accepts positive integers", () => {
+    expect(findFib(0)).toBeFalsy();
 })
