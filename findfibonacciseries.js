@@ -25,6 +25,7 @@ function findFibonnacciSeries(input) {
         index += 1;
     }
     console.log(result,'result')
+    return result;
 }
-findFibonnacciSeries(9)
+findFibonnacciSeries(2)
 module.exports = findFibonnacciSeries
