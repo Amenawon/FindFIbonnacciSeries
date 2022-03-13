@@ -1,10 +1,10 @@
 
 function findFibonnacciSeries(input) {
-    if (input % 1 != 0)
-        return 0;
+    if (!Number.isInteger(input))
+        throw new Error('Input must be an integer');
 
     if (input <= 0)
-        return 0;
+        throw new Error('Input must be a positive number');
 
     let firstTerm = 0;
     let secondTerm = 1;
