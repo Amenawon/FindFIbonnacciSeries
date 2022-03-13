@@ -1,30 +1,31 @@
 
 function findFibonnacciSeries(input) {
-    if (input <= 0) {
-        return; //or return 0
+    if (input % 1 != 0)
+        return 0;
 
-    }
+    if (input <= 0)
+        return 0;
+
     let firstTerm = 0;
     let secondTerm = 1;
 
     let nextTerm = 0;
-    let result = [];
+    let result = [firstTerm, secondTerm];
 
-    // if(input === 1){
-
-    // }
-    result.push(firstTerm, secondTerm)
+    if (input === 1) {
+        return result;
+    }
     let index = 2;
 
     while (index <= input) {
-        nextTerm = firstTerm + secondTerm 
+        nextTerm = firstTerm + secondTerm
         result.push(nextTerm)
+
         firstTerm = secondTerm;
         secondTerm = nextTerm;
 
         index += 1;
     }
-    console.log(result,'result')
     return result;
 }
 findFibonnacciSeries(2)
