@@ -6,12 +6,17 @@ function findFibonnacciSeries(input) {
     }
     let firstTerm = 0;
     let secondTerm = 1;
+
     let nextTerm = 0;
     let result = [];
+
+    // if(input === 1){
+
+    // }
     result.push(firstTerm, secondTerm)
     let index = 2;
 
-    while (index < input) {
+    while (index <= input) {
         nextTerm = firstTerm + secondTerm 
         result.push(nextTerm)
         firstTerm = secondTerm;
