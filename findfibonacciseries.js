@@ -1,6 +1,11 @@
 
 function findFibonnacciSeries(input) {
-    validateInput(input)
+    if (input % 1 != 0)
+        return 0;
+
+    if (input <= 0)
+        return 0;
+
     let firstTerm = 0;
     let secondTerm = 1;
 
@@ -23,14 +28,7 @@ function findFibonnacciSeries(input) {
     }
     return result;
 }
-function validateInput(input){
-    if (input % 1 != 0)
-        return 0;
 
-    if (input <= 0)
-        return 0;
-
-}
 findFibonnacciSeries(2)
 
 module.exports = findFibonnacciSeries
