@@ -5,8 +5,20 @@ The code test is to write a piece of code that will print out the fibonacci sequ
 What is the Fibonacci sequence?
 
 https://www.mathsisfun.com/numbers/fibonacci-sequence.html
+# To Do
+To setup the code , navigate to the solution file then run `npm install` then add 
+  "scripts": {
+    "test": "jest"
+  } 
+  (if it does not exist)
+  
+# Running the code
+To run the code, navigate to the solution file then run `node findfibonacciseries.js` in the terminal
 
-# Solution (Fibonacci Series)
+# Testing the code
+To test the code, navigate to the solution file then run `npm run test`
+
+# Solution Steps (Fibonacci Series)
 - Initialized the starting values to be 0 and 1
 - Validate if the input supplied is 1 and return the 0,1 
 - Then initialized the index (iteration) at 2
