@@ -20,6 +20,8 @@ To test the code, navigate to the solution file then run `npm run test`
 
 # Solution Steps (Fibonacci Series)
 - Initialized the starting values to be 0 and 1
+- Validate if the input supplied is an integer(whole number) ,if yes return the -1 
+- Validate if the input supplied is a positive whole number  ,if yes return the -1 
 - Validate if the input supplied is 1 and return the 0,1 
 - Then initialized the index (iteration) at 2
 - Then looped over the input set against the index , till the index is equal to the input.
