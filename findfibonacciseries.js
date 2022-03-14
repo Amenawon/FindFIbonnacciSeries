@@ -1,10 +1,13 @@
 
 function findFibonnacciSeries(input) {
     if (!Number.isInteger(input))
-        throw new Error('Input must be an integer');
+        return -1 //test if the input is a whole number
 
-    if (input <= 0)
-        throw new Error('Input must be a positive number');
+    if (input < 0)
+        return -1 //test if input is a positive whole number
+
+    if (input === 0)
+        return 0 //test if input is equal to 0
 
     let firstTerm = 0;
     let secondTerm = 1;
@@ -29,6 +32,6 @@ function findFibonnacciSeries(input) {
     return result;
 }
 
-findFibonnacciSeries(2)
+findFibonnacciSeries(9.2)
 
 module.exports = findFibonnacciSeries
